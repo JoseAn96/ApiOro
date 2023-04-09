@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Index.css"> 
+    
+    <title>Api Oro</title>
+</head>
+
+<body>
+    <nav class="navv">
+        <img class="lg" src="Img/logor2.png" alt="Logo">
+        <ul>
+            <li><a id="a1" class="aaa" href="#scc1">Inicio</a></li>
+            <li><a id="a2"  class="aaa" href="#main">Tienda</a></li>
+            <li><a id="a3"  class="aaa" href="#txtSc">Sobre Nosotros</a></li> 
+            <li><a id="a5"  class="aaa" href="#txtSs">Opina sobre nosotros</a></li>  
+            <li><a class="aaa" href="Carrusel de fotos.html">Galeria de fotos</a></li> 
+            <li><a id="a4"  class="aaa" data-bs-toggle="modal" data-bs-target="#myModal"> <i
+              class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+        </ul> 
+        <button class="burguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+    </nav>
+
+    <!-- Seccion 1 -->
+    <div id="scc1" class="container-fluid text center">
+        <div id="ctext">
+            <h1>Bienvenidos a Api Oro</h1>
+            <p>Somos una empresa Orotinense apasionada por la apicultura con mas de 30 años en el ámbito</p>
+            <a class="btnBanner" href="#titPro">COMPRAR AHORA</a>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main id="main">
+        <div id="titPro">
+            <p>Productos</p>
+            <h1>Derivados de la colmena</h1>
+        </div>
+        <section id="pMain"></section>
+        <h2 id="txtSc"></h2>
+        <h3 id="txtSs"></h3> 
+    
+    </main>
+
+    <!--  Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+
+                </div>
+                <div class="modal-footer">
+                    <button onclick="enviarCarrito()" type="button" class="btn btn-success ">Finalizar Compra</button>
+                    <p id="total">Total:</p>
+                    <p id="precioTotal">₡ 0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre Nosotros -->
+    <div id="scc2" class="container-fluid text center">
+        <h1>Sobre Nosotros</h1>
+    </div>
+
+    <!-- Seccion 3 -->
+    <div id="scc3" class="container text-center">
+        <div class="row">
+            <div class="box2 col-lg-9 col-sm-12">
+                <p>Nos encanta ser parte de todo el proceso donde las abejas producen la exquisita miel y diferentes
+                    productos que después llevamos a cada uno de sus hogares.
+                    Las abejas son una parte vital del ecosistema, estar sin ellas provocaría una crisis alimentaria; en
+                    palabras de Albert Einstein “al hombre sólo le quedarían cuatro años de vida. Sin abejas, no hay
+                    polinización, ni hierba, ni animales, ni hombres”.
+                </p>
+                <br>
+                <p>Nuestras colmenas están situadas en Orotina y alrededores, lo que permite que ellas visiten
+                    diferentes tipos de flores así mismo descubrir varios tipos de tonalidades y sabores en la miel.
+                    Ellas son nuestra prioridad, el cuido y la alimentación siempre son de la mejor calidad.
+                    </p>
+                <br>
+                <p>Para nosotros las abejas son parte de nuestra familia, por eso al comprar nuestros productos no solo
+                    ofrecemos primerísima calidad, si no también productos hechos con mucho amor y horas de dedicación a
+                    ellas.</p>
+            </div>
+            <div class="box3 col-lg-3 col-sm-12">
+                <h2>Nuestras Redes</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/mielapioro?mibextid=ZbWKwL" target="_blank" class="fa-brands fa-facebook"></a>
+                    <a href="https://instagram.com/api.oro?igshid=YmMyMTA2M2Y=" target="_blank" class="fa-brands fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+ <!-- Formulario -->   
+ <div id="scc5" class="container-fluid text center">
+    <h1>Formulario</h1>
+</div>
+
+ <div id="scc4" class="container-fluid text center"> 
+    <div class="row">
+        <div class="box4 col-lg-9 col-sm-12">
+            <form action="https://formsubmit.co/mielapioro@gmail.com" method="POST">  
+   
+                <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                <button onclick="alert ('Los datos fueron enviados correctamente!')">Enviar</button>
+        </form> 
+        </div>
+    </div>
+    
+   
+ </div> 
+
+<!--<script>
+    const btnEnvio = document.getElementById('enviarCorreo');
+
+    btnEnvio.addEventListener('click', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('email').value; 
+        const nombre = document.getElementById('nombre').value; 
+        const mensaje = document.getElementById('mensaje').value;  
+        window.location.href = 'mailto:mielapioro@gmail.com? subject=envioDesdeFormulario&body=Nombre%3A${nombre}%0ACorreo%3A${email}%0AMensaje%3A${mensaje}'; 
+        
+
+    });
+</script>-->
+
+    <footer class=" footer-f container-fluid">
+        <div class="row">
+            <div class="col">
+                <p class="txtFoo">copyright &copy; 2023 Api-Oro All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/d6cfdd6af8.js" crossorigin="anonymous"></script>
+    <script src="Shop.js"></script>
+    <script src="Action.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

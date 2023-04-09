@@ -1,0 +1,640 @@
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+        text-decoration: none;
+        list-style: none;
+      } 
+
+      html {
+        scroll-behavior: smooth;
+    }
+
+    
+    #scc1 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/3brjpg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    #ctext {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        cursor: default;
+        color: #000000;
+        margin-bottom: 100px;
+    }
+    
+    #ctext h1 {
+        font-size: 50px;
+    }
+    
+    #ctext p {
+        font-size: 35px;
+        opacity: 1;
+    }
+    
+    #ctext a {
+        margin-top: 50px;
+        font-size: 20px;
+        padding: 8px;
+        text-decoration: none;
+    } 
+
+
+
+    /*  Header,Nav  */
+.navv{
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 2em;
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+
+.navv-scroll {
+    background-color: #fff;
+    transition: all 0.5s ease;
+    box-shadow: 0 6px 6px -6px #999;
+}
+
+.lg {
+    width: auto;
+    height: 45px;
+}
+
+ul{
+    width: 55%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aaa {
+    font-size: 20px;
+    color: #060707;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    padding: .2em;
+}
+
+.aaa::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background-color: #F1C40F;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.aaa:hover::after {
+    width: 100%;
+}
+
+
+
+
+#scc2 {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/beelv.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+} 
+
+#scc2 h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.box2 {
+    font-size: 20px;
+    cursor: default;
+    margin-top: 3em;
+    font-weight: 400;
+    text-align: justify;
+    padding-right: 2em;
+} 
+
+.row {
+    align-items: baseline;
+}
+
+.rowEdit {
+    border-top: 1px solid #dee2e6;
+} 
+
+
+
+#scc3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #151818;
+}
+
+.box2 {
+    font-size: 20px;
+    cursor: default;
+    margin-top: 3em;
+    font-weight: 400;
+    text-align: justify;
+    padding-right: 2em;
+}
+
+
+  .splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } 
+
+
+  .footer-f {
+    display: flex;
+    justify-content: center;
+    height: 3.5em;
+    background-color: #3c4141;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    margin-top: 3em;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    cursor: default;
+}
+ 
+
+@media only screen and (min-width: 320px) {
+
+    .modal-content {
+        width: 100%;
+    }
+
+    /* Banner Principal*/
+    #ctext {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: default;
+        color: #dee2e6;
+    }
+
+    #ctext h1 {
+        font-size: 28px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+
+    }
+
+    #ctext p {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 2em;
+        font-weight: 300;
+        letter-spacing: 2px;
+
+    }
+    #scc1 {
+        width: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/3brjpg.jpg);
+        background-position-y: 0;
+        background-position-x: 1%;
+    }
+
+    #scc2 h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .box2 {
+        font-size: 17px;
+        cursor: default;
+        margin-top: 3em;
+        font-weight: 500;
+    }
+
+    .footer-f {
+        display: flex;
+        justify-content: center;
+        height: 3.5em;
+        background-color: #3c4141;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        margin-top: 3em;
+        font-family: 'Open Sans';
+        font-size: 13px;
+    }
+
+} 
+
+
+
+@media only screen and (min-width: 480px) {
+    .modal-content {
+        width: 100%;
+    }
+
+    /* Banner Principal*/
+    #ctext {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: default;
+        color: #dee2e6;
+    }
+
+    #ctext h1 {
+        font-size: 28px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+
+    }
+
+    #ctext p {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 2em;
+        font-weight: 300;
+        letter-spacing: 2px;
+
+    }
+    #scc1 {
+        width: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/3brjpg.jpg);
+        background-position-y: 0;
+        background-position-x: 1%;
+    }
+
+    #scc2 h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .box2 {
+        font-size: 17px;
+        cursor: default;
+        margin-top: 3em;
+        font-weight: 500;
+    }
+
+    .footer-f {
+        display: flex;
+        justify-content: center;
+        height: 3.5em;
+        background-color: #3c4141;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        margin-top: 3em;
+        font-family: 'Open Sans';
+        font-size: 13px;
+    }
+} 
+
+
+@media only screen and (min-width: 600px) {
+    .modal-content {
+        width: 100%;
+    }
+
+    /* Banner Principal*/
+    #ctext {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: default;
+        color: #dee2e6;
+    }
+
+    #ctext h1 {
+        font-size: 28px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+
+    }
+
+    #ctext p {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 2em;
+        font-weight: 300;
+        letter-spacing: 2px;
+
+    }
+    #scc1 {
+        width: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/3brjpg.jpg);
+        background-position-y: 0;
+        background-position-x: 1%;
+    }
+
+    #scc2 h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .box2 {
+        font-size: 17px;
+        cursor: default;
+        margin-top: 3em;
+        font-weight: 500;
+    }
+
+    .footer-f {
+        display: flex;
+        justify-content: center;
+        height: 3.5em;
+        background-color: #3c4141;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        margin-top: 3em;
+        font-family: 'Open Sans';
+        font-size: 13px;
+    }
+} 
+
+
+@media only screen and (min-width: 768px) { 
+    .modal-content {
+        width: 100%;
+    }
+
+    /* Banner Principal*/
+    #ctext {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: default;
+        color: #dee2e6;
+    }
+
+    #ctext h1 {
+        font-size: 28px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+
+    }
+
+    #ctext p {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 2em;
+        font-weight: 300;
+        letter-spacing: 2px;
+
+    }
+    #scc1 {
+        width: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/3brjpg.jpg);
+        background-position-y: 0;
+        background-position-x: 1%;
+    }
+
+    #scc2 h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .box2 {
+        font-size: 17px;
+        cursor: default;
+        margin-top: 3em;
+        font-weight: 500;
+    }
+
+    .footer-f {
+        display: flex;
+        justify-content: center;
+        height: 3.5em;
+        background-color: #3c4141;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        margin-top: 3em;
+        font-family: 'Open Sans';
+        font-size: 13px;
+    }
+
+} 
+
+
+@media only screen and (min-width: 900px) {
+    .modal-content {
+        width: 100%;
+    }
+
+    /* Banner Principal*/
+    #ctext {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: default;
+        color: #dee2e6;
+    }
+
+    #ctext h1 {
+        font-size: 28px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+
+    }
+
+    #ctext p {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 2em;
+        font-weight: 300;
+        letter-spacing: 2px;
+
+    }
+    #scc1 {
+        width: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/3brjpg.jpg);
+        background-position-y: 0;
+        background-position-x: 1%;
+    }
+
+    #scc2 h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .box2 {
+        font-size: 17px;
+        cursor: default;
+        margin-top: 3em;
+        font-weight: 500;
+    }
+
+    .footer-f {
+        display: flex;
+        justify-content: center;
+        height: 3.5em;
+        background-color: #3c4141;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        margin-top: 3em;
+        font-family: 'Open Sans';
+        font-size: 13px;
+    } 
+} 
+
+
+@media only screen and (min-width: 1200px) {
+    .modal-content {
+        width: 100%;
+    }
+
+    /* Banner Principal*/
+    #ctext {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: default;
+        color: #dee2e6;
+    }
+
+    #ctext h1 {
+        font-size: 28px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+
+    }
+
+    #ctext p {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 2em;
+        font-weight: 300;
+        letter-spacing: 2px;
+
+    }
+    #scc1 {
+        width: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/3brjpg.jpg);
+        background-position-y: 0;
+        background-position-x: 1%;
+    }
+
+    #scc2 h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .box2 {
+        font-size: 17px;
+        cursor: default;
+        margin-top: 3em;
+        font-weight: 500;
+    }
+
+    .footer-f {
+        display: flex;
+        justify-content: center;
+        height: 3.5em;
+        background-color: #3c4141;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        margin-top: 3em;
+        font-family: 'Open Sans';
+        font-size: 13px;
+    }   
+}
